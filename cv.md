@@ -1,4 +1,4 @@
-# @baxromxoja16
+# name baxromxoja
 
 ## Contacts
 instagram @baxromxoja16
