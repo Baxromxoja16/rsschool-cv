@@ -480,3 +480,492 @@ main {
     margin-top: 0.5rem;
   }
 }
+
+/* Large screens (1200px and up) */
+@media (min-width: 1200px) {
+    body {
+        padding: 30px;
+    }
+    
+    .container {
+        max-width: 1200px;
+    }
+    
+    main {
+        padding: 50px;
+        gap: 50px;
+    }
+}
+
+/* Medium screens (992px to 1199px) */
+@media (max-width: 1199px) {
+    .container {
+        max-width: 1000px;
+    }
+    
+    main {
+        gap: 35px;
+    }
+}
+
+/* Small screens (768px to 991px) - Tablets */
+@media (max-width: 991px) {
+    body {
+        padding: 15px;
+    }
+    
+    .container {
+        border-radius: 12px;
+    }
+    
+    header {
+        padding: 30px 20px;
+    }
+    
+    .profile-img {
+        width: 120px;
+        height: 120px;
+        font-size: 50px;
+    }
+    
+    header h1 {
+        font-size: 2.2rem;
+    }
+    
+    .job-title {
+        font-size: 1.2rem;
+    }
+    
+    main {
+        grid-template-columns: 1fr 1.5fr;
+        gap: 30px;
+        padding: 30px;
+    }
+    
+    .sidebar {
+        padding: 25px;
+    }
+    
+    .content-area {
+        padding: 0 15px;
+    }
+    
+    .section h2 {
+        font-size: 1.6rem;
+    }
+    
+    .nav-list {
+        gap: 20px;
+    }
+    
+    .nav-list li {
+        font-size: 0.9rem;
+    }
+}
+
+/* Mobile screens (768px and below) */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+        align-items: stretch;
+    }
+    
+    .container {
+        border-radius: 10px;
+        margin: 0;
+    }
+    
+    header {
+        padding: 25px 15px;
+    }
+    
+    .profile-img {
+        width: 100px;
+        height: 100px;
+        font-size: 45px;
+        border-width: 3px;
+    }
+    
+    header h1 {
+        font-size: 1.8rem;
+        margin-bottom: 8px;
+    }
+    
+    .job-title {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+    
+    /* Navigation - Stack vertically on mobile */
+    nav {
+        margin-top: 15px;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+    }
+    
+    .nav-list li {
+        justify-content: center;
+        font-size: 0.85rem;
+    }
+    
+    /* Main content - Single column */
+    main {
+        display: block;
+        padding: 20px 15px;
+    }
+    
+    .sidebar {
+        margin-bottom: 25px;
+        padding: 20px;
+        border-radius: 12px;
+    }
+    
+    .content-area {
+        padding: 0;
+    }
+    
+    /* Sections */
+    .section {
+        margin-bottom: 25px;
+    }
+    
+    .section h2 {
+        font-size: 1.4rem;
+        margin-bottom: 15px;
+    }
+    
+    .section h2::after {
+        width: 40px;
+    }
+    
+    /* Skills */
+    .skills-category {
+        margin-bottom: 20px;
+    }
+    
+    .skills-category h3 {
+        font-size: 0.95rem;
+        margin-bottom: 10px;
+    }
+    
+    .skills-list {
+        gap: 6px;
+    }
+    
+    .skills-list li {
+        font-size: 0.8rem;
+        padding: 4px 10px;
+    }
+    
+    /* Language levels */
+    .language-level {
+        gap: 12px;
+        padding: 12px;
+        margin-bottom: 10px;
+    }
+    
+    .language-name {
+        min-width: 70px;
+        font-size: 0.85rem;
+    }
+    
+    .level-indicator {
+        height: 8px;
+    }
+    
+    /* About section */
+    .intro {
+        padding: 18px;
+        font-size: 0.95rem;
+        text-align: left;
+    }
+    
+    /* Work experience */
+    .work-experience h2 {
+        font-size: 1.4rem;
+    }
+    
+    .job {
+        padding: 18px;
+        margin-bottom: 15px;
+    }
+    
+    .job-header {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 6px;
+    }
+    
+    .job-title h3 {
+        font-size: 1.1rem;
+    }
+    
+    .company {
+        font-size: 0.85rem;
+        margin-top: 2px;
+    }
+    
+    .job-meta {
+        text-align: left;
+        font-size: 0.8rem;
+        margin-top: 6px;
+        color: #6b7280;
+    }
+    
+    .job-summary {
+        font-size: 0.9rem;
+        margin: 10px 0 12px 0;
+    }
+    
+    .job-bullets {
+        padding-left: 16px;
+    }
+    
+    .job-bullets li {
+        font-size: 0.85rem;
+        margin-bottom: 6px;
+        line-height: 1.4;
+    }
+    
+    /* Code example */
+    pre {
+        font-size: 0.75rem;
+        padding: 12px;
+        overflow-x: auto;
+    }
+    
+    /* Footer */
+    .contact {
+        padding: 18px;
+        margin-top: 25px;
+    }
+    
+    .page-footer__inner {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .page-footer__copyright p {
+        font-size: 18px;
+    }
+    
+    .page-footer__contact-links {
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+    }
+    
+    .page-footer__contact-links .contact-links__item a {
+        font-size: 18px;
+    }
+    
+    .page-footer__contact-links .contact-links__item a img {
+        width: 60px;
+    }
+}
+
+/* Extra small screens (480px and below) */
+@media (max-width: 480px) {
+    body {
+        padding: 5px;
+    }
+    
+    .container {
+        border-radius: 8px;
+    }
+    
+    header {
+        padding: 20px 12px;
+    }
+    
+    .profile-img {
+        width: 80px;
+        height: 80px;
+        font-size: 35px;
+    }
+    
+    header h1 {
+        font-size: 1.5rem;
+        margin-bottom: 6px;
+    }
+    
+    .job-title {
+        font-size: 0.9rem;
+    }
+    
+    .nav-list li {
+        font-size: 0.8rem;
+    }
+    
+    main {
+        padding: 15px 10px;
+    }
+    
+    .sidebar {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .section {
+        margin-bottom: 20px;
+    }
+    
+    .section h2 {
+        font-size: 1.2rem;
+        margin-bottom: 12px;
+    }
+    
+    .skills-category h3 {
+        font-size: 0.9rem;
+    }
+    
+    .skills-list li {
+        font-size: 0.75rem;
+        padding: 3px 8px;
+    }
+    
+    .language-level {
+        padding: 10px;
+        gap: 8px;
+    }
+    
+    .language-name {
+        min-width: 60px;
+        font-size: 0.8rem;
+    }
+    
+    .intro {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+    
+    .job {
+        padding: 15px;
+    }
+    
+    .job-title h3 {
+        font-size: 1rem;
+    }
+    
+    .company {
+        font-size: 0.8rem;
+    }
+    
+    .job-meta {
+        font-size: 0.75rem;
+    }
+    
+    .job-summary {
+        font-size: 0.85rem;
+    }
+    
+    .job-bullets li {
+        font-size: 0.8rem;
+    }
+    
+    pre {
+        font-size: 0.7rem;
+        padding: 10px;
+    }
+    
+    .contact {
+        padding: 15px;
+    }
+    
+    .page-footer__copyright p {
+        font-size: 16px;
+    }
+    
+    .page-footer__contact-links .contact-links__item a {
+        font-size: 16px;
+    }
+    
+    .page-footer__contact-links .contact-links__item a img {
+        width: 50px;
+    }
+}
+
+/* Landscape orientation for mobile devices */
+@media (max-width: 768px) and (orientation: landscape) {
+    .profile-section {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        text-align: left;
+    }
+    
+    .profile-img {
+        width: 80px;
+        height: 80px;
+        font-size: 35px;
+    }
+    
+    header h1 {
+        margin-bottom: 5px;
+    }
+    
+    .job-title {
+        margin-bottom: 10px;
+    }
+    
+    nav {
+        margin-top: 10px;
+    }
+    
+    .nav-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+}
+
+/* Print styles */
+@media print {
+    body {
+        background: white;
+        padding: 0;
+    }
+    
+    .container {
+        box-shadow: none;
+        border-radius: 0;
+        max-width: none;
+    }
+    
+    header {
+        background: #2c3e50 !important;
+        -webkit-print-color-adjust: exact;
+        color-adjust: exact;
+    }
+    
+    .nav-list a {
+        color: white !important;
+    }
+    
+    .page-footer__contact-links .contact-links__item a img {
+        width: 40px;
+    }
+    
+    .job, .sidebar, .intro {
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .profile-img {
+        border-width: 2px;
+    }
+    
+    .section h2::after {
+        height: 2px;
+    }
+}
